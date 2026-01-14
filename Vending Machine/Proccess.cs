@@ -20,7 +20,7 @@ namespace Vending_Machine
                 bool isSelected = false;
             do
             {
-                Console.WriteLine("Select number for vending machine 1 = sodas, 2 = Chips, and 3 = Candy");
+                Console.WriteLine("Select number for vending machine 1 = sodas, 2 = Chips, 3 = Candy, and 4 for exit");
                 vendingNumber = Int32.Parse(Console.ReadLine());
                 switch (vendingNumber)
                 {
@@ -107,9 +107,12 @@ namespace Vending_Machine
                             }
                         }
 
+                        break;
 
+                    case 4:
+                        Console.WriteLine("Exiting vending machine");
 
-
+                
 
                         break;
                     default:
@@ -118,7 +121,7 @@ namespace Vending_Machine
                         break;
 
                 }
-            } while (vendingNumber != 1 || vendingNumber != 2 || vendingNumber != 3);
+            } while (vendingNumber != 4);
         }
 
 
