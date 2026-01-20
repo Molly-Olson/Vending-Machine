@@ -27,7 +27,7 @@ namespace Vending_Machine
                     case 1:
                         while (isSelected == false)
                         {
-                            Console.WriteLine("\nSelect soda [CocaCola, Pepsi, RootBeer]");
+                            Console.WriteLine("\nSelect soda [CocaCola, Pepsi, RootBeer, Sprite]");
                             itemName = Console.ReadLine();
                             if (itemName.Equals("CocaCola", StringComparison.OrdinalIgnoreCase))
                             {
@@ -44,6 +44,11 @@ namespace Vending_Machine
                                 Console.WriteLine("Enjoy your RootBeer");
                                 isSelected = true;
                             }
+                            else if (itemName.Equals("Sprite", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Sprite");
+                                isSelected = true;
+                            }
                             else
                             {
                                 Console.WriteLine("Not the correct soda in the vending machine, please select the correct one you want.");
@@ -55,7 +60,7 @@ namespace Vending_Machine
                     case 2:
                         while (isSelected == false)
                         {
-                            Console.WriteLine("\nSelect chips [Lays, Pringles, SunChips]");
+                            Console.WriteLine("\nSelect chips [Lays, Pringles, SunChips, Cheetos]");
                             itemName = Console.ReadLine();
                             if (itemName.Equals("Lays", StringComparison.OrdinalIgnoreCase))
                             {
@@ -72,6 +77,11 @@ namespace Vending_Machine
                                 Console.WriteLine("Enjoy your SunChips");
                                 isSelected = true;
                             }
+                            else if (itemName.Equals("Cheetos", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Cheetos");
+                                isSelected = true;
+                            }
                             else
                             {
                                 Console.WriteLine("Not the correct chips in the vending machine, please select the correct one you want.");
@@ -83,7 +93,7 @@ namespace Vending_Machine
 
                         while (isSelected == false)
                         {
-                            Console.WriteLine("\nSelect Candy [Snickers, Twix, Reeses]");
+                            Console.WriteLine("\nSelect Candy [Snickers, Twix, Reeses, KitKat, Oreos]");
                             itemName = Console.ReadLine();
                             if (itemName.Equals("Snickers", StringComparison.OrdinalIgnoreCase))
                             {
@@ -98,6 +108,16 @@ namespace Vending_Machine
                             else if (itemName.Equals("Reeses", StringComparison.OrdinalIgnoreCase))
                             {
                                 Console.WriteLine("Enjoy your Reeses");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("KitKat", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your KitKat");
+                                isSelected = true;
+                            }
+                            else if (itemName.Equals("Oreos", StringComparison.OrdinalIgnoreCase))
+                            {
+                                Console.WriteLine("Enjoy your Oroes");
                                 isSelected = true;
                             }
                             else
